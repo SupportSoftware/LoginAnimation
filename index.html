@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adeveloperr-Animated Login Page</title>
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video autoplay id="myVideo" loop muted onclick="playVideo()">
+      <source
+        src="video/mylivewallpapers.com-Tanjiro-Kamado-in-Forest.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <audio autoplay loop id="myAudio">
+      <source
+        src="sound/forest-with-small-river-birds-and-nature-field-recording-6735.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <header class="container">
+      <a href="#" class="logo">Logo</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a onclick="Login()" class="login" href="#">Sign in</a></li>
+      </ul>
+    </header>
+
+    <main class="login-form">
+      <div onclick="Login()" class="close-login-form">&times;</div>
+      <form action="">
+        <h1>Login</h1>
+        <div class="input-group">
+          <input type="text" placeholder="Username" />
+          <label>Username</label>
+          <button>
+            <svg
+              width="20px"
+              height="20px"
+              stroke-width="1.1"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#8c8c8c"
+            >
+              <path
+                d="M5 20V19C5 15.134 8.13401 12 12 12V12C15.866 12 19 15.134 19 19V20"
+                stroke="#8c8c8c"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z"
+                stroke="#8c8c8c"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="input-group">
+          <input type="password" placeholder="Password" />
+          <label>Password</label>
+          <button>
+            <svg
+              width="20px"
+              height="20px"
+              stroke-width="1.1"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              color="#8c8c8c"
+            >
+              <path
+                d="M16 12H17.4C17.7314 12 18 12.2686 18 12.6V19.4C18 19.7314 17.7314 20 17.4 20H6.6C6.26863 20 6 19.7314 6 19.4V12.6C6 12.2686 6.26863 12 6.6 12H8M16 12V8C16 6.66667 15.2 4 12 4C8.8 4 8 6.66667 8 8V12M16 12H8"
+                stroke="#8c8c8c"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="remember">
+          <div class="checkbox-group">
+            <input type="checkbox" />
+            <label>Remember me</label>
+          </div>
+
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button class="login-button">Login</button>
+        <p>Don't have an account? <a class="sign-up" href="#">Sign up</a></p>
+      </form>
+    </main>
+
+    <!-- Javscript  -->
+    <script src="main.js"></script>
+  </body>
+</html>
